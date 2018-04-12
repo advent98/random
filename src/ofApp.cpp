@@ -9,22 +9,28 @@ jewel.load("diamond.png");// image to use (must be stored in "random/bin/data" f
  std::random_device rd;
  std::mt19937 eng1(rd());
  
- int min_x =0;
- int max_x = 1200;
+ int mean_x = 1000;
+ int std_x = 15;
+  
+  int mean_y = 800;
+  int std_y = 15;
+  
+ //int min_x =0;
+ //int max_x = 1200;
  
- int min_y = 0;
- int max_y = 970;
+ //int min_y = 0;
+ //int max_y = 970;
  
  
- std::uniform_int_distribution<>unifrm_x(min_x,max_x);
+ std::normal_distribution<int>norm_x(mean_x,std_x);
   for(int n=0; n<20; n++){
-    x.push_back(unifrm_x(eng1));  
+    x.push_back(norm_x(eng1));  
   
   }
   
-  std::uniform_int_distribution<>unifrm_y(min_y,max_y);
+  std::normal_distribution<int>norm_y(mean_y,std_y);
   for(int n=20; n<20; n++){
-   y.push_back(unifrm_y(eng1));
+   y.push_back(norm_y(eng1));
   }
  
  
