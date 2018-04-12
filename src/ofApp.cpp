@@ -18,13 +18,13 @@ jewel.load("diamond.png");// image to use (must be stored in "random/bin/data" f
  
  std::uniform_int_distribution<>unifrm_x(min_x,max_x);
   for(int n=0; n<20; n++){
-    x.push_back(unifrm(eng1));  
+    x.push_back(unifrm_x(eng1));  
   
   }
   
   std::uniform_int_distribution<>unifrm_y(min_y,max_y);
   for(int n=20; n<20; n++){
-   y.push_back(unifrm(eng1));
+   y.push_back(unifrm_y(eng1));
   }
  
  
