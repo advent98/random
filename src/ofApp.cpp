@@ -14,13 +14,6 @@ jewel.load("diamond.png");// image to use (must be stored in "random/bin/data" f
   
   int mean_y = 800;
   int std_y = 15;
-  
- //int min_x =0;
- //int max_x = 1200;
- 
- //int min_y = 0;
- //int max_y = 970;
- 
  
  std::normal_distribution<int>norm_x(mean_x,std_x);
   for(int n=0; n<20; n++){
@@ -35,8 +28,7 @@ jewel.load("diamond.png");// image to use (must be stored in "random/bin/data" f
  
  
  
-//X = {500, 1000, 30, 100, 300, 200, 750, 380 };// set of x-coordinates for jewel
-//Y = {630, 400, 900,40, 200, 0, 90, 30}; //set of y-coordinates for jewel
+
 }
 
 //--------------------------------------------------------------
